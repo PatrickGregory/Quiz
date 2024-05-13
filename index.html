@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css" integrity="sha512-ywmPbuxGS4cJ7GxwCX+bCJweeext047ZYU2HP52WWKbpJnF4/Zzfr2Bo19J4CWPXZmleVusQ9d//RB5bq0RP7w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>How much do you know about JavaScript</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+   <div style="margin-left: 10%; margin-top: 5%;">
+        <!-- header section -->
+        <header>
+            <h1>Simple JavaScript Quiz</h1>
+            <p>Test your knowledge in <b>JavaScript Fundamentals</b></p>
+        </header>
+        <!-- main section -->
+        <section>
+            <div id="result"></div><br>
+            <form method="#" action="#" name="quizForm" onsubmit="return Result()">
+                <h3>1. Which HTML element do we put in JavaScript code</h3>
+                <input type="radio" name="q1" value="a" id="q1a">a. &lt;Js&gt;<br>
+                <input type="radio" name="q1" value="b" id="q1a">b. &lt;script&gt;<br>
+                <input type="radio" name="q1" value="c" id="q1a">c. &lt;body&gt;<br>
+                <input type="radio" name="q1" value="d" id="q1a">d. &lt;link&gt;<br>
+                <br>
+
+                <h3>2. Which HTML attribute is used to reference external JavaScript file?</h3>
+                <input type="radio" name="q2" value="a" id="q2a">a. src<br>
+                <input type="radio" name="q2" value="b" id="q2a">b. rel<br>
+                <input type="radio" name="q2" value="c" id="q2a">c. type<br>
+                <input type="radio" name="q2" value="d" id="q2a">d. href<br>
+                <br>
+
+                <h3>3. How would you write "Hello" in alert box?</h3>
+                <input type="radio" name="q3" value="a" id="q3a">a. msg("Hello")<br>
+                <input type="radio" name="q3" value="b" id="q3a">b. alertBox("Hello")<br>
+                <input type="radio" name="q3" value="c" id="q3a">c. document.write("Hello")<br>
+                <input type="radio" name="q3" value="d" id="q3a">d. alert("Hello")<br>
+                <br>
+
+                <h3>4. JavaScript is directly related to java programming language?</h3>
+                <input type="radio" name="q4" value="a" id="q4a">a. True<br>
+                <input type="radio" name="q4" value="b" id="q4a">b. False<br>
+                <br>
+
+                <h3>5. Variable in JavaScript must start with which special character?</h3>
+                <input type="radio" name="q5" value="a" id="q5a">a. @<br>
+                <input type="radio" name="q5" value="b" id="q5a">b. $<br>
+                <input type="radio" name="q5" value="c" id="q5a">c. #<br>
+                <input type="radio" name="q5" value="d" id="q5a">d. No special character<br>
+                <br>
+
+                <h3>6. Which property notations are equivalent?</h3>
+                <input type="radio" name="q6" value="a" id="q6a">a. myobj(name) and myobj("name")<br>
+                <input type="radio" name="q6" value="b" id="q6a">b. myobj.name and myobj[name]<br>
+                <input type="radio" name="q6" value="c" id="q6a">c. myobj.name and name.myobj<br>
+                <input type="radio" name="q6" value="d" id="q6a">d. myobj.name() and myobj.name[]<br>
+                <br>
+
+                <h3>7. Immediately invoked function expressions______</h3>
+                <input type="radio" name="q7" value="a" id="q7a">a. Execute as soon as browser reads them<br>
+                <input type="radio" name="q7" value="b" id="q7a">b. Execute when the entire script is read<br>
+                <input type="radio" name="q7" value="c" id="q7a">c. Execute before the script is read<br>
+                <input type="radio" name="q7" value="d" id="q7a">d. Execute when called by name<br>
+                <br>
+
+                <h3>8. Which of the following statement is correct</h3>
+                <input type="radio" name="q8" value="a" id="q8a">a. A Variable declared inside a function without a var keyword is only inside a function<br>
+                <input type="radio" name="q8" value="b" id="q8a">b. A Variable declared inside a function is only available inside a function<br>
+                <input type="radio" name="q8" value="c" id="q8a">c. A Variable declared to be a global can be changed inside a function<br>
+                <input type="radio" name="q8" value="d" id="q8a">d. A Variable declared inside a function can be called outside a function<br>
+                <br>
+                
+                <h3>9. What are the basic data types in JavaScript?</h3>
+                <input type="radio" name="q9" value="a" id="q9a">a. digits, alphabets, alpha-numeric<br>
+                <input type="radio" name="q9" value="b" id="q9a">b. object, array, variable and constants<br>
+                <input type="radio" name="q9" value="c" id="q9a">c. number, string, boolean, undefined, null, symbol, BigInt<br>
+                <input type="radio" name="q9" value="d" id="q9a">d. BigInt, SmallInt, MedInt<br>
+                <br>
+
+                <h3>10. How do you declare a variable in JavaScript?</h3>
+                <input type="radio" name="q10" value="a" id="q10a">a. using var, let and const keywords<br>
+                <input type="radio" name="q10" value="b" id="q10a">b. using create, init and var keywords<br>
+                <input type="radio" name="q10" value="c" id="q10a">c. using new, let, or begin keyword<br>
+                <input type="radio" name="q10" value="d" id="q10a">d. using var, let and begin keywords<br>
+                <br>
+
+                <h3>11. How do you comment in JavaScript?</h3>
+                <input type="radio" name="q11" value="a" id="q11a">a. using comment keyword<br>
+                <input type="radio" name="q11" value="b" id="q11a">b. using note keyword<br>
+                <input type="radio" name="q11" value="c" id="q11a">c. using '//' for single line and '/* */' for multiple lines<br>
+                <input type="radio" name="q11" value="d" id="q11a">d. only '//'<br>
+                <br>
+
+                <h3>12. How do you define a function in JavaScript?</h3>
+                <input type="radio" name="q12" value="a" id="q12a">a. function functionName{function body}(parameter1, parameter2)<br>
+                <input type="radio" name="q12" value="b" id="q12a">b. function functionName(parameter1,parameter2){function body}<br>
+                <input type="radio" name="q12" value="c" id="q12a">c. function functionName(parameter1,parameter2)<br>
+                <input type="radio" name="q12" value="d" id="q12a">d. function functionName{function body}<br>
+                <br>
+
+                <h3>13. How do you call a function in JavaScript?</h3>
+                <input type="radio" name="q13" value="a" id="q13a">a. function functionName(parameter1,parameter2){function body}<br>
+                <input type="radio" name="q13" value="b" id="q13a">b. using get keyword<br>
+                <input type="radio" name="q13" value="c" id="q13a">c. by typing the function name<br>
+                <input type="radio" name="q13" value="d" id="q13a">d. using functionName(argument1, argument2)<br>
+                <br>
+
+                <h3>14. What is the return statement used for in JavaScript functions?</h3>
+                <input type="radio" name="q14" value="a" id="q14a">a. The return statement is used to specify the value to be returned by a function. It also terminates the function's execution.<br>
+                <input type="radio" name="q14" value="b" id="q14a">b. The return statement terminates the function's execution only.<br>
+                <input type="radio" name="q14" value="c" id="q14a">c. The return statement ensures that the variables declared in a function do not affect variables with global scope<br>
+                <input type="radio" name="q14" value="d" id="q14a">d. The return statement is used to specify the value to be returned by a function only<br>
+                <br>
+
+                <h3>15. What is the purpose of the 'this' keyword in JavaScript?</h3>
+                <input type="radio" name="q15" value="a" id="q15a">a. The 'this' keyword is used to refer to most recent variable declared<br>
+                <input type="radio" name="q15" value="b" id="q15a">b. The 'this' keyword refers to the current object in a method or function.<br>
+                <input type="radio" name="q15" value="c" id="q15a">c. The 'this' keyword is used refer to the current object in the function only. <br>
+                <input type="radio" name="q15" value="d" id="q15a">d. The 'this' keyword is used refer to the current object in the method only.<br>
+                <br>
+
+                <h3>16. What is a JavaScript event?</h3>
+                <input type="radio" name="q16" value="a" id="q16a">a. A JavaScript event is a way to print the date and time changes were made to the codes<br>
+                <input type="radio" name="q16" value="b" id="q16a">b. A JavaScript event is used to keep tabs of the latest addition to your codes.<br>
+                <input type="radio" name="q16" value="c" id="q16a">c. A JavaScript event is used to request real-time date and time display at any part of the screen<br>
+                <input type="radio" name="q16" value="d" id="q16a">d. A JavaScript event is an action that occurs as a result of user interaction or system triggers<br>
+                <br>
+
+                <h3>17. How do you handle events in JavaScript?</h3>
+                <input type="radio" name="q17" value="a" id="q17a">a. by specifying event attributes directly in HTML only<br>
+                <input type="radio" name="q17" value="b" id="q17a">b. You can handle events by assigning event handlers to elements using the addEventListener() method only<br>
+                <input type="radio" name="q17" value="c" id="q17a">c. You can handle events by assigning event handlers to elements using the addEventListener() method or by specifying event attributes directly in HTML.<br>
+                <input type="radio" name="q17" value="d" id="q17a">d. You can handle events by using addEventHandler()method<br>
+                <br>
+                
+                <h3>18. What is an event listener?</h3>
+                <input type="radio" name="q18" value="a" id="q18a">a. An event listener is a function that listens for a specific event on an element and performs an action in response to that event.<br>
+                <input type="radio" name="q18" value="b" id="q18a">b. An event listener aids JavaScript to play html audio files<br>
+                <input type="radio" name="q18" value="c" id="q18a">c. An event listener is a predefined function aimed at aiding users with hearing impediments, in any case of audio files being used<br>
+                <input type="radio" name="q18" value="d" id="q18a">d. A Variable declared inside a function can be called outside a function<br>
+                <br>
+
+                <h3>19. What is an array in JavaScript?</h3>
+                <input type="radio" name="q19" value="a" id="q19a">a. An array is a data structure that stores a collection of elements, which can be of different data types, in a single variable.<br>
+                <input type="radio" name="q19" value="b" id="q19a">b. An array is a data structure that stores a collection of integers only.<br>
+                <input type="radio" name="q19" value="c" id="q19a">c. An array is a data structure that stores a collection of Boolean data types only.<br>
+                <input type="radio" name="q19" value="d" id="q19a">d. An array is a data structure that stores a collection of symbols only.<br>
+                <br>
+
+                <h3>20. How do you access elements in an array?</h3>
+                <input type="radio" name="q20" value="a" id="q20a">a. You can access elements in an array using square brackets [] with the index of the element you want to access.<br>
+                <input type="radio" name="q20" value="b" id="q20a">b. You can access elements in an array using curly brackets {} with the index of the element you want to access.<br>
+                <input type="radio" name="q20" value="c" id="q20a">c. You can access elements in an array using curved brackets () with the index of the element you want to access.<br>
+                <input type="radio" name="q20" value="d" id="q20a">d. You can access elements in an array using the arrayName<br>
+                <br>
+
+                <h3>21. What are JavaScript objects?</h3>
+                <input type="radio" name="q21" value="a" id="q21a">a. JavaScript objects are collections of key-value pairs where each key is a string (or symbol) and each value can be of only integer data type.<br>
+                <input type="radio" name="q21" value="b" id="q21a">b. JavaScript objects are collections of key-value pairs where each key is a symbol only and each value can be of any data type.<br>
+                <input type="radio" name="q21" value="c" id="q21a">c. JavaScript objects are collections of key-value pairs where each key is a string only and each value can be of any data type.<br>
+                <input type="radio" name="q21" value="d" id="q21a">d. JavaScript objects are collections of key-value pairs where each key is a string (or symbol) and each value can be of any data type.<br>
+                <br>
+
+                <h3>22. How do you create an object in JavaScript?</h3>
+                <input type="radio" name="q22" value="a" id="q22a">a. Objects can be created using the = operator <br>
+                <input type="radio" name="q22" value="b" id="q22a">b. Objects can be created using the new keyword followed by a constructor function.<br>
+                <input type="radio" name="q22" value="c" id="q22a">c. Objects can be created using object literals {} only<br>
+                <input type="radio" name="q22" value="d" id="q22a">d. Objects can be created using object literals {} or the new keyword followed by a constructor function.<br>
+                <br>
+
+                <h3>23. How do you access object properties in JavaScript?</h3>
+                <input type="radio" name="q23" value="a" id="q23a">a. You can access object properties using dot notation (object.property) only.<br>
+                <input type="radio" name="q23" value="b" id="q23a">b. You can access object properties using bracket notation (object['property']) only.<br>
+                <input type="radio" name="q23" value="c" id="q23a">c. A Variable declared to be a global can be changed inside a function<br>
+                <input type="radio" name="q23" value="d" id="q23a">d. You can access object properties using dot notation (object.property) or bracket notation (object['property']).<br>
+                <br>
+
+                <h3>24. What is a loop in JavaScript?</h3>
+                <input type="radio" name="q24" value="a" id="q24a">a. A loop is used to design circles using only JavaScript<br>
+                <input type="radio" name="q24" value="b" id="q24a">b. A loop is a programming construct that aids the manipulation of multiple variables simultaeneously<br>
+                <input type="radio" name="q24" value="c" id="q24a">c. A loop is a programming construct that repeats a block of code multiple times until a certain condition is met.<br>
+                <input type="radio" name="q24" value="d" id="q24a">d. A loop is a programming construct that repeats a block of code infinitely<br>
+                <br>
+
+                <h3>25. What are the types of loops available in JavaScript?</h3>
+                <input type="radio" name="q25" value="a" id="q25a">a. for...of, for.....while, and for........in only<br>
+                <input type="radio" name="q25" value="b" id="q25a">b. do.....while, for.........in, and for............of only<br>
+                <input type="radio" name="q25" value="c" id="q25a">c. for, for......in, for.....of, while and do-while only<br>
+                <input type="radio" name="q25" value="d" id="q25a">d. for, for........in and for..............of only<br>
+                <br>
+
+                <h3>26. What is the for loop used for in JavaScript?</h3>
+                <input type="radio" name="q26" value="a" id="q26a">a. The for loop is used to execute a block of code multiple times based on one or more condition.<br>
+                <input type="radio" name="q26" value="b" id="q26a">b. The for loop is used to execute a block of code multiple times based on more than one condition.<br>
+                <input type="radio" name="q26" value="c" id="q26a">c. The for loop is used to execute a block of code multiple times based on a condition.<br>
+                <input type="radio" name="q26" value="d" id="q26a">d. The for loop is used to execute a block of code a maximum of four times based on a condition.<br>
+                <br>
+
+                <h3>27. What is the while loop used for in JavaScript?</h3>
+                <input type="radio" name="q27" value="a" id="q27a">a. The while loop is used to execute a block of code as long as a specified condition is False<br>
+                <input type="radio" name="q27" value="b" id="q27a">b. The while loop is used to execute a block of code as long as a specified condition is True<br>
+                <input type="radio" name="q27" value="c" id="q27a">c. The do-while loop is used to execute a block of code as long as a specified condition is true<br>
+                <input type="radio" name="q27" value="d" id="q27a">d. The while loop is used to execute a block of code as long as a specified condition is true/false<br>
+                <br>
+
+                <h3>28. What is the do-while loop used for in JavaScript?</h3>
+                <input type="radio" name="q28" value="a" id="q28a">a. the do-while loop, will always execute the block of code only once before checking the condition.<br>
+                <input type="radio" name="q28" value="b" id="q28a">b. the do-while loop, will always execute the block of code at least once before checking the condition.<br>
+                <input type="radio" name="q28" value="c" id="q28a">c. the do-while loop, will always execute the block of code at more than once before checking the condition.<br>
+                <input type="radio" name="q28" value="d" id="q28a">d. the do-while loop, will NEVER execute the block of code at least once before checking the condition.<br>
+                <br>
+
+                <h3>29. How do you break out of a loop in JavaScript?</h3>
+                <input type="radio" name="q29" value="a" id="q29a">a. You can use the `continue` statement to exit a loop prematurely.<br>
+                <input type="radio" name="q29" value="b" id="q29a">b. You can use the `break` statement to exit a loop prematurely.<br>
+                <input type="radio" name="q29" value="c" id="q29a">c. You can use the `leave` statement to exit a loop prematurely.<br>
+                <input type="radio" name="q29" value="d" id="q29a">d. You can use the `exit` statement to exit a loop prematurely.<br>
+                <br>
+
+                <h3>30. What is the switch statement used for in JavaScript?</h3>
+                <input type="radio" name="q30" value="a" id="q30a">a. The switch statement is used to evaluate an expression and execute a different block of code depending on the value of the expression.<br>
+                <input type="radio" name="q30" value="b" id="q30a">b. The switch statement is used to evaluate an expression and execute a different block of code regardless of the value of the expression.<br>
+                <input type="radio" name="q30" value="c" id="q30a">c. The switch statement cannot be used to evaluate an expression and execute a different block of code depending on the value of the expression.<br>
+                <input type="radio" name="q30" value="d" id="q30a">d. The switch statement is used to evaluate an expression and execute a the same block of code regardless of the value of the expression.<br>
+                <br>
+
+                <h3>31. What are conditional statements in JavaScript?</h3>
+                <input type="radio" name="q31" value="a" id="q31a">a. Conditional statements are used to execute different blocks of code based on specified conditions.<br>
+                <input type="radio" name="q31" value="b" id="q31a">b. Conditional statements are used to keep the processor in the best condition to avoid over-heating during infinite loops<br>
+                <input type="radio" name="q31" value="c" id="q31a">c. Conditional statements are used to execute different blocks of code based on unspecified conditions.<br>
+                <input type="radio" name="q31" value="d" id="q31a">d. Conditional statements are used to execute different blocks of code without paying mind to specified conditions.<br>
+                <br>
+
+                <h3>32. What is the if statement used for in JavaScript?</h3>
+                <input type="radio" name="q32" value="a" id="q32a">a. The if statement is used to execute a block of code if a specified condition is true<br>
+                <input type="radio" name="q32" value="b" id="q32a">b. The if statement is used to execute a block of code if a specified condition is false<br>
+                <input type="radio" name="q32" value="c" id="q32a">c. The if statement is used to execute a block of code regardless of if a specified condition is true/false<br>
+                <input type="radio" name="q32" value="d" id="q32a">d. The if statement is used to execute a block of code if a specified condition is not true<br>
+                <br>
+
+                <h3>33. What is the else statement used for in JavaScript?</h3>
+                <input type="radio" name="q33" value="a" id="q33a">a. The else statement is used to execute a block of code if the condition in the if statement is true.<br>
+                <input type="radio" name="q33" value="b" id="q33a">b. The else statement is used to execute a block of code regardless of if the condition in the if statement is true/false.<br>
+                <input type="radio" name="q33" value="c" id="q33a">c. The else statement is used to execute a block of code regardless of the condition in the if statement<br>
+                <input type="radio" name="q33" value="d" id="q33a">d. The else statement is used to execute a block of code if the condition in the if statement is false.<br>
+                <br>
+
+                <h3>34. What is the else if statement used for in JavaScript?</h3>
+                <input type="radio" name="q34" value="a" id="q34a">a. The if else statement is used to specify a new condition to test if the previous condition in an if statement is false.<br>
+                <input type="radio" name="q34" value="b" id="q34a">b. The else if statement is used to specify a new condition that is triggered regardless of if the previous condition in an if statement is true/false.<br>
+                <input type="radio" name="q34" value="c" id="q34a">c. The else if statement is used to specify a new condition to test if the previous condition in an if statement is true.<br>
+                <input type="radio" name="q34" value="d" id="q34a">d. The else if statement is used to specify a new condition to test if the previous condition in an if statement is false.<br>
+                <br>
+
+                <h3>35. What is the try-catch statement used for in JavaScript?</h3>
+                <input type="radio" name="q35" value="a" id="q35a">a. The try-catch statement is used to handle errors gracefully by trying a block of code and catching any codes without errors.<br>
+                <input type="radio" name="q35" value="b" id="q35a">b. The try-catch statement is used to handle errors gracefully by trying a block of code and catching one error per process.<br>
+                <input type="radio" name="q35" value="c" id="q35a">c. The try-catch statement is used to pick an element from an array.<br>
+                <input type="radio" name="q35" value="d" id="q35a">d. The try-catch statement is used to handle errors gracefully by trying a block of code and catching any errors that occur.<br>
+                <br>
+
+                <h3>36. How do you handle errors in JavaScript?</h3>
+                <input type="radio" name="q36" value="a" id="q36a">a. You can only use try-catch blocks to handle errors<br>
+                <input type="radio" name="q36" value="b" id="q36a">b. You can only use the throw statement to throw custom errors.<br>
+                <input type="radio" name="q36" value="c" id="q36a">c. You can use try-catch blocks to handle errors, or you can use the throw statement to throw custom errors.<br>
+                <input type="radio" name="q36" value="d" id="q36a">d. You can only use developer tools on your browser to check for errors<br>
+                <br>
+
+                <h3>37. What are JavaScript closures?</h3>
+                <input type="radio" name="q37" value="a" id="q37a">a. A closure is a function that does not have access to its outer scope, because the outer scope has closed.<br>
+                <input type="radio" name="q37" value="b" id="q37a">b. A closure is a function that has access to its outer scope, because the outer scope has closed.<br>
+                <input type="radio" name="q37" value="c" id="q37a">c. A closure is a function that has access to its outer scope, only when the outer scope has closed.<br>
+                <input type="radio" name="q37" value="d" id="q37a">d. A closure is a function that has access to its outer scope, even after the outer scope has closed.<br>
+                <br>
+
+                <h3>38. How do you create a closure in JavaScript?</h3>
+                <input type="radio" name="q38" value="a" id="q38a">a. Closures are created by defining a function outside another function and returning it, allowing the inner function to retain access to the variables in the outer function.<br>
+                <input type="radio" name="q38" value="b" id="q38a">b. Closures are created by defining a function inside another function and returning it, allowing the inner function to retain access to the variables in the outer function.<br>
+                <input type="radio" name="q38" value="c" id="q38a">c. Closures are created by defining a function inside another function and returning it, allowing the outer function to retain access to the variables in the inner function.<br>
+                <input type="radio" name="q38" value="d" id="q38a">d. Closures are created by defining a function inside another function and  not returning it, allowing the outer function to retain access to the variables in the inner function.<br>
+                <br>
+
+                <h3>39. What are callback functions in JavaScript?</h3>
+                <input type="radio" name="q39" value="a" id="q39a">a. Callback functions are functions that are passed as arguments to other functions and are executed after the completion of an asynchronous operation.<br>
+                <input type="radio" name="q39" value="b" id="q39a">b. Callback functions are functions that are passed as arguments to other functions and are executed before the completion of an asynchronous operation.<br>
+                <input type="radio" name="q39" value="c" id="q39a">c. Callback functions are functions that are not passed as arguments to other functions and are executed after the completion of an asynchronous operation.<br>
+                <input type="radio" name="q39" value="d" id="q39a">d. Callback functions are functions that are passed as arguments to other functions and are executed after the completion of a synchronous operation.<br>
+                <br>
+
+                <h3>40. What is the setTimeout() function used for in JavaScript?</h3>
+                <input type="radio" name="q40" value="a" id="q40a">a. The setTimeout() function is used to execute a function or evaluate an expression after a unforseen delay.<br>
+                <input type="radio" name="q40" value="b" id="q40a">b. The setTimeout() function is used to execute a function or evaluate an expression after a specified delay.<br>
+                <input type="radio" name="q40" value="c" id="q40a">c. The setTimeout() function is used to execute a function after a specified delay only.<br>
+                <input type="radio" name="q40" value="d" id="q40a">d. The setTimeout() function is used evaluate an expression after a specified delay only.<br>
+                <br>
+
+                <h3>41. What is the setInterval() function used for in JavaScript?</h3>
+                <input type="radio" name="q41" value="a" id="q41a">a. The setInterval() function is used to repeatedly execute a function or evaluate an expression at an infinite interval.<br>
+                <input type="radio" name="q41" value="b" id="q41a">b. The setInterval() function is used to repeatedly execute a function at a specified interval only.<br>
+                <input type="radio" name="q41" value="c" id="q41a">c. The setInterval() function is used to repeatedly execute a function or evaluate an expression at a specified interval.<br>
+                <input type="radio" name="q41" value="d" id="q41a">d. The setInterval() function is used to repeatedly evaluate an expression at a specified interval only.<br>
+                <br>
+
+                <h3>42. How do you manipulate the DOM (Document Object Model) in JavaScript?</h3>
+                <input type="radio" name="q42" value="a" id="q42a">a. You can manipulate the DOM using various methods and properties provided by the document object, such as getElementById(), createElement(), and appendChild() only.<br>
+                <input type="radio" name="q42" value="b" id="q42a">b. You can manipulate the DOM using various methods and properties provided by the document object, such as getElementById(), querySelector(), and createElement() only.<br>
+                <input type="radio" name="q42" value="c" id="q42a">c. You can manipulate the DOM using various methods and properties provided by the document object, such as getElementById(), querySelector(), createElement(), and appendChild() only.<br>
+                <input type="radio" name="q42" value="d" id="q42a">d. You can manipulate the DOM using various methods and properties provided by the document object, such as getElementById(), querySelector(), and appendChild() only.<br>
+                <br>
+
+                <h3>43. What is the document.getElementById() method used for in JavaScript?</h3>
+                <input type="radio" name="q43" value="a" id="q43a">a. The document.getElementById() method is used to retrieve a reference to an element in the DOM based on its unique id attribute.<br>
+                <input type="radio" name="q43" value="b" id="q43a">b. The document.getElementById() method is used to retrieve a reference to an element in the DOM based on its unique id or class attribute.<br>
+                <input type="radio" name="q43" value="c" id="q43a">c. The document.getElementById() method is used to retrieve a reference to an element in the DOM based on its unique id, class, or name attribute.<br>
+                <input type="radio" name="q43" value="d" id="q43a">d. The document.getElementById() method is used to retrieve a reference to an element in the DOM based on its unique id, class, name, or value attribute.<br>
+                <br>
+
+                <h3>44. What is the querySelector() method used for in JavaScript?</h3>
+                <input type="radio" name="q44" value="a" id="q44a">a. The querySelector() method is used to retrieve a reference to the first element in the DOM that matches a specified CSS selector and Html attribute.<br>
+                <input type="radio" name="q44" value="b" id="q44a">b. The querySelector() method is used to retrieve a reference to the first element in the DOM that matches a specified CSS selector and Html inline elements only.<br>
+                <input type="radio" name="q44" value="c" id="q44a">c. The querySelector() method is used to retrieve a reference to the first element in the DOM that matches a specified CSS selector and Html block elements only.<br>
+                <input type="radio" name="q44" value="d" id="q44a">d. The querySelector() method is used to retrieve a reference to the first element in the DOM that matches a specified CSS selector.<br>
+                <br>
+
+                <h3>45. What is the createElement() method used for in JavaScript?</h3>
+                <input type="radio" name="q45" value="a" id="q45a">a. The createElement() method is used to create a new attribute in the DOM with the specified tag name.<br>
+                <input type="radio" name="q45" value="b" id="q45a">b. The createElement() method is used to create a new element in the DOM with the specified tag name.<br>
+                <input type="radio" name="q45" value="c" id="q45a">c. The createElement() method is used to edit the contents of an element in the DOM with the specified tag name.<br>
+                <input type="radio" name="q45" value="d" id="q45a">d. The createElement() method is used to create a new element in the DOM with the specified class name.<br>
+                <br>
+
+                <h3>46. What is event delegation in JavaScript?</h3>
+                <input type="radio" name="q46" value="a" id="q46a">a. Event delegation is a technique in JavaScript where multiple event listeners are attached to a parent element to handle events for its descendant elements.<br>
+                <input type="radio" name="q46" value="b" id="q46a">b. Event delegation is a technique in JavaScript where a single event listener is attached to a child element to handle events for its parent element.<br>
+                <input type="radio" name="q46" value="c" id="q46a">c. Event delegation is a technique in JavaScript where a single event listener is attached to a parent element to handle events for its descendant elements.<br>
+                <input type="radio" name="q46" value="d" id="q46a">d. Event delegation is a technique in JavaScript where multiple event listeners are attached to children element to handle events for its parent elements.<br>
+                <br>
+
+                <h3>47. What are arrow functions in JavaScript?</h3>
+                <input type="radio" name="q47" value="a" id="q47a">a. Arrow functions are a concise way to write function expressions in JavaScript. They use a shorter syntax and do not bind their own `this` value.<br>
+                <input type="radio" name="q47" value="b" id="q47a">b. Arrow functions are a concise way to write function expressions in JavaScript. They use a shorter syntax and bind their own `this` value.<br>
+                <input type="radio" name="q47" value="c" id="q47a">c. Arrow functions are a concise way to write function expressions in JavaScript. They use a shorter syntax and do not bind their own this value.<br>
+                <input type="radio" name="q47" value="d" id="q47a">d. Arrow functions are a more lengthy way to write function expressions in JavaScript. They use a shorter syntax and do not bind their own `this` value.<br>
+                <br>
+
+                <h3>48. What are template literals in JavaScript?</h3>
+                <input type="radio" name="q48" value="a" id="q48a">a. Template literals are boolean literals that allow embedded expressions. They are enclosed in backticks (`) instead of single or double quotes.<br>
+                <input type="radio" name="q48" value="b" id="q48a">b. Template literals are integer literals that allow embedded expressions. They are enclosed in backticks (`) instead of single or double quotes.<br>
+                <input type="radio" name="q48" value="c" id="q48a">c. Template literals are string literals that allow embedded expressions. They are enclosed in single or double quotes.<br>
+                <input type="radio" name="q48" value="d" id="q48a">d. Template literals are string literals that allow embedded expressions. They are enclosed in backticks (`) instead of single or double quotes.<br>
+                <br>
+
+                <h3>49. What is strict mode in JavaScript?</h3>
+                <input type="radio" name="q49" value="a" id="q49a">a. Strict mode is just a fancy way to say dark mode<br>
+                <input type="radio" name="q49" value="b" id="q49a">b. Strict mode is a way to opt out of restricted variant of JavaScript that enforces stricter rules and throws more exceptions for common coding errors.<br>
+                <input type="radio" name="q49" value="c" id="q49a">c. Strict mode is a way to opt into a restricted variant of JavaScript that enforces stricter rules and throws more exceptions for common coding errors.<br>
+                <input type="radio" name="q49" value="d" id="q49a">d. Strict mode is a way to opt into a restricted variant of JavaScript that enforces less strict rules and throws less exceptions for common coding errors.<br>
+                <br>
+
+                <h3>50. What is the `typeof` operator used for in JavaScript?</h3>
+                <input type="radio" name="q50" value="a" id="q50a">a. The typeof operator is used to determine the data type of a variable only.<br>
+                <input type="radio" name="q50" value="b" id="q50a">b. The typeof operator is used to determine the data type of a variable or expression.<br>
+                <input type="radio" name="q50" value="c" id="q50a">c. The typeof operator is used to determine the data type of a variable, method of an object or expression.<br>
+                <input type="radio" name="q50" value="d" id="q50a">d. The typeof operator is used to determine the data type of an expression only.<br>
+                <br><br>
+                <input type="submit" value="submit Answer">
+            </form>
+        </section>
+
+        <!-- footer section -->
+        <footer>
+            <p>Copyright &copy;2024, All Rights Reserved</p>
+        </footer>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.24.0/babel.min.js" integrity="sha512-2nvFgDDkDQZAO7x0iuupGiKpK+/qm7+bjzIEZBCn3o7v60+ZaPoe5x4sb21xahHfI7RCC9emLVY1k4kvap9RyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="quiz.js"></script>
+</body>
+</html>
